@@ -16,7 +16,7 @@ sys.path.append(os.path.join(BASE_DIR, "utils"))
 
 from leaf_process import LeafProcess
 
-print(BASE_DIR)
+
 
 parser = argparse.ArgumentParser(description="Leaf Flattening")
 parser.add_argument("--input", default="data\\sugarbeet")
@@ -26,7 +26,6 @@ args = parser.parse_args()
 # timestr = time.strftime("%Y%m%d-%H%M%S")
 # timestr = "tmp"
 output_folder_name = args.output
-print(output_folder_name)
 
 INPUT_DATA_DIR = os.path.abspath(args.input)
 OUTPUT_DIR = os.path.join(BASE_DIR, output_folder_name)
@@ -49,7 +48,9 @@ def reconstruct(path_params):
 
 if __name__ == "__main__":
     leafs_path = sorted(os.listdir(INPUT_DATA_DIR))
-    # print(leafs_path)
+
+    print("Leafs path: {}".format(leafs_path))
+    print("Output folder: {}".format(output_folder_name))
 
     with open(os.path.join(OUTPUT_DIR, "result.csv"), "w") as f:
         writer = csv.writer(f, lineterminator="\n")

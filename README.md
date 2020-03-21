@@ -12,10 +12,10 @@ The test environment for this repository is
 # Quick Start
 To reconstruct the leaf surface from the point cloud data located at data/soybean is 
 
-`python reconstruct.py --input data/soybean --output output/soybean
+`python reconstruction.py --input data/soybean --output output/soybean
 `
 
-This will create an output/soybean diretory and produces the result for each leaf
+This will create an output/soybean directory and produces the result for each leaf
 that exist in the data/soybean directory.
 
 # Outputs

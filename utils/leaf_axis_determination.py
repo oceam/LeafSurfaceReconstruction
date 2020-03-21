@@ -12,7 +12,6 @@ from helper_functions import *
 def surface_area_calculation(l_axis, d_axis, bins, bin_range, p_init, i):
     fig = plt.figure()
     ax = fig.add_subplot(121)
-    ax_hist = fig.add_subplot(122)
 
     if i % 60 == 0:
         print("angle: {}".format(i)) 
@@ -23,8 +22,8 @@ def surface_area_calculation(l_axis, d_axis, bins, bin_range, p_init, i):
     # 3D to 2D
     # h_(theta)l-plane 
     p_transformed = transform_axis_pointcloud(p_init, h_theta, l_axis, w_theta)
-    H = ax_hist.hist2d(p_transformed[:, 0], p_transformed[:, 1], bins=bins, range=bin_range)
-    fig.colorbar(H[3], ax=ax_hist)
+    H = ax.hist2d(p_transformed[:, 0], p_transformed[:, 1], bins=bins, range=bin_range)
+    # fig.colorbar(H[3], ax=ax)
     plt.close()
     return (np.count_nonzero(H[0]), i)
 
