@@ -1,7 +1,8 @@
 # A Robust Leaf Surface Reconstruction Method for 3D Plant Phenotyping
 This is a support page of paper submmited to "Plant Phenomics" as an Original Research.
 
-> ANDO,R., OZASA,Y., GUO, W.(2020, under review). Robust Surface Reconstruction of Plant Leaf from 3D Point Cloud. Plant Phenomics.
+> ANDO,R., OZASA,Y., GUO, W.(2021). Robust Surface Reconstruction of Plant Leaves from 3D Point Clouds. Plant Phenomics. 2021;2021:DOI:10.34133/2021/3184185
+
 ---
 
 # Test Environment
